@@ -27,7 +27,7 @@ for (i=1;i<4;i++) {
 }
 if (i==4) {
 
-    console.log("perdites te quedaste sin intentos");}
+    console.log("perdites te quedaste sin intentos, EL NUMERO SECRETO ERA",secreto);}
 
 
 
