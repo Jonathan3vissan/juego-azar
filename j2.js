@@ -17,13 +17,21 @@ for (i = 1; i < 4 ; i++) {
        console.log("ganaste");
         i = (6);
       
-     }else {
-
+     }else
+      {
         console.log("intento numero",i);
         
-    }
+     } 
+    
+   
+}
+if (i == 4 ) {
+
+    console.log("perdites te quedaste sin intentos");
+
     
 }
+
 
 
 
