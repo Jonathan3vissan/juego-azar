@@ -1,6 +1,6 @@
 const leer = require ("prompt-sync")();
 
-let secreto ;
+let secreto =0;
 let maxii=6 ; 
 let minimo= 0;
 let elecionUsuario = 0;
