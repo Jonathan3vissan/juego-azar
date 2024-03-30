@@ -1,21 +1,21 @@
 const leer = require ("prompt-sync")();
 
-let secreto =0;
-let maxii=6 ; 
-let minimo= 0;
-let elecionUsuario = 0;
+let secreto=0;
+let maxii=6; 
+let minimo=0;
+let elecionUsuario=0;
 secreto= Math.round(Math.random()*(minimo-maxii)+maxii)
 console.log("Adivina el numero secreto en solo 3 intentos");
-console.log("empezemos eligendo u numero");
+console.log("empezemos eligendo un numero");
 
 
-for (i = 1; i < 4 ; i++) {
+for (i=1;i<4;i++) {
    
-    elecionUsuario =leer ();
+    elecionUsuario=leer();
 
-    if (elecionUsuario == secreto ) {       
+    if (elecionUsuario==secreto) {       
        console.log("ganaste");
-        i = (6);
+        i=(6);
       
      }else
       {
@@ -25,12 +25,9 @@ for (i = 1; i < 4 ; i++) {
     
    
 }
-if (i == 4 ) {
+if (i==4) {
 
-    console.log("perdites te quedaste sin intentos");
-
-    
-}
+    console.log("perdites te quedaste sin intentos");}
 
 
 
