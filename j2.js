@@ -6,7 +6,7 @@ let secreto=0;
 let minimo=0;
 let elecionUsuario=0;
 
-console.log("elegir cantidad de intenso ,con un minimo 3 intentos");
+console.log("elegir cantidad de intentos ,con un minimo 3 intentos");
 cantItenElegidos= (leer());
 if (cantItenElegidos<3) {
      cantItenElegidos=3  
