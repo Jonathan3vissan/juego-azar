@@ -1,31 +1,44 @@
-const leer = require ("prompt-sync")();
+const leer = require ("prompt-sync")()
 
+let maxii=0;
+let cantItenElegidos=0;
 let secreto=0;
-let maxii=6; 
 let minimo=0;
 let elecionUsuario=0;
-secreto= Math.round(Math.random()*(minimo-maxii)+maxii)
-console.log("Adivina el numero secreto en solo 3 intentos");
+
+console.log("elegir cantidad de intenso ,con un minimo 3 intentos");
+cantItenElegidos= (leer());
+if (cantItenElegidos<3) {
+     cantItenElegidos=3  
+}
+maxii= cantItenElegidos*2
+
+console.log("Adivina el numero secreto en solo",cantItenElegidos,"intentos");
 console.log("empezemos eligiendo un numero");
+secreto= Math.round(Math.random()*(minimo-maxii)+maxii)
 
 
-for (i=1;i<4;i++) {
+   
+
+
+
+for (i=0;i<cantItenElegidos;i++) {
    
     elecionUsuario=leer();
 
     if (elecionUsuario==secreto) {       
        console.log("ganaste");
-        i=(6);
+        i=(cantItenElegidos);
       
      }else
       {
-        console.log("intento numero",i);
+        console.log("intento numero",i+1);
         
      } 
     
    
 }
-if (i==4) {
+if (i==cantItenElegidos) {
 
     console.log("perdites te quedaste sin intentos, EL NUMERO SECRETO ERA",secreto);}
 
