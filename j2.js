@@ -1,5 +1,5 @@
 const leer = require ("prompt-sync")()
-
+let i = 0;
 let maxii=0;
 let cantItenElegidos=0;
 let secreto=0;
@@ -16,10 +16,6 @@ maxii= cantItenElegidos*2
 console.log("Adivina el numero secreto en solo",cantItenElegidos,"intentos");
 console.log("empezemos eligiendo un numero");
 secreto= Math.round(Math.random()*(minimo-maxii)+maxii)
-
-
-   
-
 
 
 for (i=0;i<cantItenElegidos;i++) {
